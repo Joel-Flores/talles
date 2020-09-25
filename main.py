@@ -7,7 +7,7 @@ TALLE_XL=4
 TALLE_XXL=5
 TALLE_XXXL=6
 ESPECIAL=7
-def talle_cadera():
+def talle_pecho():
     
     while True:
         try:
@@ -39,7 +39,39 @@ def talle_cadera():
         print (pecho, "usted es talle 3XL")
     else :
         print (pecho, "usted es un talle Especial")
-            
+
+def talle_cadera():
+    while True:
+        try:
+            cadera = int(input("INGRESE MEDIDA DE CADERA:  "))
+            break
+        except ValueError:
+            print("ERROR : ingrese un numero")
+
+    if 101 <= cadera <= 108:
+        talleCadera = TALLE_XS
+        print (cadera, "usted es talle XS")
+    elif 109 <= cadera <= 116:
+        talleCadera = TALLE_S
+        print (cadera, "usted es talle S")    
+    elif 117 <= cadera <= 125:  
+        talleCadera = TALLE_M
+        print (cadera, "usted es talle M")
+    elif 126 <= cadera <= 137:  
+        talleCadera = TALLE_L
+        print (cadera, "usted es talle L")
+    elif 138 <= cadera <= 149:
+        talleCadera = TALLE_XL  
+        print (cadera, "usted es talle XL")
+    elif 150 <= cadera <= 161:  
+        talleCadera = TALLE_XXL
+        print (cadera, "usted es talle XXL")
+    elif 162 <= cadera <= 173:  
+        talleCadera = TALLE_XXXL
+        print (cadera, "usted es talle 3XL")
+    else :
+        print (cadera,"usted es un talle Especial")
+        
 def talle_cintura():
     pass
 def talle_ldbrazo():
@@ -50,6 +82,7 @@ def talle_entrepierna():
 def run():
     print('Bienvenido!!!\n')
     print('Ingrese las medidas del equipo: ')
+    talle_pecho()
     talle_cadera()
     talle_cintura()
     talle_ldbrazo()
