@@ -103,9 +103,39 @@ def talle_cintura():
         print (cintura, "usted es talle 3XL")
     else :
         print ("usted es un talle Especial")
-        
+
 def talle_ldbrazo():
-    pass
+    while True:
+        try:
+            ldbrazo = int(input("INGRESE MEDIDA DE LARGO DE BRAZO:  "))
+            break
+        except ValueError:
+            print("ERROR : ingrese un numero")
+    
+    if 55 <= ldbrazo <= 61:
+        talleldbrazo = TALLE_XS  
+        print (ldbrazo, "usted es talle XS")
+    elif 62 <= ldbrazo <= 63:
+        talleldbrazo = TALLE_S
+        print (ldbrazo, "usted es talle S")    
+    elif 64 <= ldbrazo <= 65:
+        talleldbrazo = TALLE_M  
+        print (ldbrazo, "usted es talle M")
+    elif 66 <= ldbrazo <= 67:
+        talleldbrazo = TALLE_L  
+        print (ldbrazo,"usted es talle L")
+    elif 68 <= ldbrazo <= 69:
+        talleldbrazo = TALLE_XL  
+        print (ldbrazo, "usted es talle XL")
+    elif 70 <= ldbrazo <= 71:
+        talleldbrazo = TALLE_XXL  
+        print (ldbrazo, "usted es talle XXL")
+    elif 72 <= ldbrazo <= 73:
+        talleldbrazo = TALLE_XXXL  
+        print (ldbrazo, "usted es talle 3XL")
+    else :
+        print ("usted es un talle Especial")  
+        print (ldbrazo)
 def talle_entrepierna():
     pass
 
