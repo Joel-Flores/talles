@@ -7,6 +7,7 @@ TALLE_XL=4
 TALLE_XXL=5
 TALLE_XXXL=6
 ESPECIAL=7
+#todas las funciones de los talles cumplen casi la misma funcion pero con distintas variables.
 def talle_pecho():
     
     while True:
@@ -136,6 +137,7 @@ def talle_ldbrazo():
     else :
         print ("usted es un talle Especial")  
         print (ldbrazo)
+
 def talle_entrepierna():
     while True:
         try:
@@ -171,6 +173,7 @@ def talle_entrepierna():
 def run():
     print('Bienvenido!!!\n')
     print('Ingrese las medidas del equipo: ')
+    #llamo a las funciones que me retornan el talle de cada parte del cuerpo
     talle_pecho()
     talle_cadera()
     talle_cintura()
