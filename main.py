@@ -137,7 +137,36 @@ def talle_ldbrazo():
         print ("usted es un talle Especial")  
         print (ldbrazo)
 def talle_entrepierna():
-    pass
+    while True:
+        try:
+            entrepierna = int(input("INGRESE MEDIDA DE ENTREPIERNA:  ")) 
+            break
+        except ValueError:
+            print("ERROR : ingrese un numero")
+
+    if 55 <= entrepierna <= 80: 
+        print ("usted es talle XS")         
+        talleentrepierna = TALLE_XS   
+    elif 81 <= entrepierna <= 84:
+        talleentrepierna = TALLE_S
+        print (entrepierna, "usted es talle S")    
+    elif 85 <= entrepierna <= 88:
+        talleentrepierna = TALLE_M  
+        print (entrepierna, "usted es talle M")
+    elif 89 <= entrepierna <= 92:
+        talleentrepierna = TALLE_L 
+        print (entrepierna, "usted es talle L")
+    elif 93 <= entrepierna <= 96:
+        talleentrepierna = TALLE_XL
+        print (entrepierna, "usted es talle XL")
+    elif 97 <= entrepierna <= 100:
+        talleentrepierna = TALLE_XXL 
+        print (entrepierna, "usted es talle XXL")
+    elif 101 <= entrepierna <= 120:
+        talleentrepierna = TALLE_XXXL 
+        print (entrepierna, "usted es talle 3XL")
+    else :
+        print (entrepierna, "usted es un talle Especial")
 
 def run():
     print('Bienvenido!!!\n')
