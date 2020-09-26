@@ -71,9 +71,39 @@ def talle_cadera():
         print (cadera, "usted es talle 3XL")
     else :
         print (cadera,"usted es un talle Especial")
-        
+
 def talle_cintura():
-    pass
+    while True:
+        try:
+            cintura = int(input("INGRESE MEDIDA DE CINTURA:  "))
+            break
+        except ValueError:
+            print("ERROR : ingrese un numero")
+
+    if 70 <= cintura <= 78:
+        talleCintura = TALLE_XS
+        print (cintura, "usted es talle XS")
+    elif 79 <= cintura <= 86:
+        talleCintura = TALLE_S
+        print (cintura, "usted es talle S")    
+    elif 87 <= cintura <= 94:  
+        talleCintura = TALLE_M
+        print (cintura, "usted es talle M")
+    elif 95 <= cintura <= 102:  
+        talleCintura = TALLE_L
+        print (cintura, "usted es talle L")
+    elif 103 <= cintura <= 111:
+        talleCintura = TALLE_XL 
+        print (cintura, "usted es talle XL")
+    elif 112 <= cintura <= 123:  
+        talleCintura = TALLE_XXL
+        print (cintura, "usted es talle XXL")
+    elif 124 <= cintura <= 135:  
+        talleCintura = TALLE_XXXL
+        print (cintura, "usted es talle 3XL")
+    else :
+        print ("usted es un talle Especial")
+        
 def talle_ldbrazo():
     pass
 def talle_entrepierna():
